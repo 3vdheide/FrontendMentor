@@ -1,0 +1,19 @@
+.tip-selection {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+
+    .percentages {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1.2rem;
+
+        input {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 376px) {
+            grid-template-columns: auto auto;
+        }
+    }
+}

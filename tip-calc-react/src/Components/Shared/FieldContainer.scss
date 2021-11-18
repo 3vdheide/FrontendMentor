@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .label-container {
+        display: flex;
+        justify-content: space-between;
+
+        label {
+            display: inline-block;
+        }
+
+        .error {
+            font-weight: bold;
+            font-size: 1.8rem;
+            color: $color-error;
+        }
+    }
+
+    .input-container {
+        position: relative;
+        display: flex;
+
+        .icon {
+            position: absolute;
+            left: 2rem;
+            top: 0;
+            bottom: 0;
+            padding-top: 1.6rem;
+
+            @media screen and (max-width: 376px) {
+                padding-top: 1.2rem;
+            }
+
+            &.dollar {
+                width: 1.2rem;
+            }
+
+            &.person {
+                width: 1.4rem;
+            }
+        }
+
+        input.error {
+            outline: 2px solid $color-error;
+        }
+    }
+}

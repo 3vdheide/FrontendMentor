@@ -1,0 +1,7 @@
+.header {
+    padding-top: 8rem;
+
+    @media screen and (max-width: 376px) {
+        padding-top: 5rem;
+    }
+}

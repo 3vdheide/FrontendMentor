@@ -1,0 +1,36 @@
+@import "../../../styles/variables";
+
+.result {
+    display: flex;
+
+    .label-container {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            padding: 0;
+            color: $color-white;
+            font-size: 1.5rem;
+        }
+
+        .pax-label {
+            color: $color-cyan-dark-gray;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+
+    .amount-container {
+        margin-left: auto;
+
+        .amount {
+            font-weight: bold;
+            font-size: 4.5rem;
+            color: $color-cyan;
+
+            @media screen and (max-width: 376px) {
+                font-size: 3rem;
+            }
+        }
+    }
+}

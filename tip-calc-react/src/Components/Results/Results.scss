@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.results {
+    flex: 1 1 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    border-radius: 1rem;
+    background-color: $color-cyan-very-dark;
+
+    @media screen and (max-width: 376px) {
+        padding: 3rem 2rem 2rem;
+    }
+}

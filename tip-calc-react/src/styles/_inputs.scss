@@ -1,0 +1,42 @@
+input {
+    text-align: right;
+    padding: 0 1.5rem;
+    height: 5rem;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: $color-cyan-very-dark;
+    background-color: $color-cyan-light-gray;
+    border: none;
+    outline: none;
+
+    @media screen and (max-width: 376px) {
+        height: 4rem;
+    }
+
+    &:focus {
+        outline: 2px solid $color-cyan;
+    }
+
+    &::placeholder {
+        color: $color-cyan-dark-gray;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &[type="number"] {
+        -moz-appearance: textfield;
+    }
+}
+
+label {
+    color: $color-cyan-dark;
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
